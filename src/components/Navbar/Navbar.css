@@ -1,0 +1,152 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .navTop {
+    width: 100%;
+    padding: 15px 0px;
+    border-bottom: 1px solid #3F4E65;
+}
+.nav .navTop .container .row .col-lg-12{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+}
+.nav .navTop .navTopLeft{
+    display: flex;
+    align-items: center; 
+    grid-gap: 40px;
+}
+.nav .navTop .navTopLeft .location,
+.nav .navTop .navTopLeft .mail{
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+}
+.nav .navTop .navTopLeft .location h5,
+.nav .navTop .navTopLeft .mail h5 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    color: black;
+    margin-bottom: 0px;
+}
+.nav .navTop .navTopLeft .location h5 span,
+.nav .navTop .navTopLeft .mail h5 span{
+    font-weight: 400;
+    color: #3F4E65;
+}
+.nav .navTop ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    grid-gap: 60px;
+}
+.nav .navTop ul li a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3F4E65;
+    text-decoration: none;
+}
+/* navBottom is starting */
+.nav .navBottom {
+    width: 100%;
+    padding: 10px 0px;
+}
+.nav .navBottom .col-lg-12{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .navBottom .col-lg-12 img {
+    height: unset;
+}
+.nav .navBottom button{
+    padding: 21px 54px;
+    background-color: #FFC85E;
+    border-radius: 79px;
+    border: none;
+    color: white;
+    font-size: 700px;
+    font-size: 14px;
+    line-height: 100%;
+    display: flex;
+    grid-gap: 12px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.nav .navBottom button svg{
+    margin-bottom: -3px;
+}
+.nav .navBottom form {
+    position: relative;
+}
+.nav .navBottom form input{
+    padding: 20px;
+    background-color: #EDEDED;
+    border-radius: 39px;
+    border: none;
+    outline: none;
+}
+.nav .navBottom form .back{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: #FFC85E;
+    padding: 11px 14px;
+    border-radius: 50%;
+
+}
+.nav .navBottom form  .search {
+    color: white;
+}
+.nav .navBottom .info{
+
+    display: flex;
+    align-items: center;
+    grid-gap: 14px;
+}
+.nav .navBottom .info h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #111111;
+}
+.nav .navBottom .info h5 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3F4E65;
+}
+.nav .navBottom .info a {
+    display: flex;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #3F4E65;
+    justify-content: end !important;
+}
+.nav .navBottom .shop{
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+.nav .navBottom .shop svg{
+    font-size: 40px;
+}
+.nav .navBottom .shop h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #111111;
+}
+.nav .navBottom .shop h4 span{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3F4E65;
+}
