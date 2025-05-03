@@ -1,0 +1,103 @@
+section {
+    width: 100%;
+}
+section .container{
+    display: grid !important;
+    grid-template-columns: repeat(4,auto) ;
+    grid-gap: 20px;
+
+}
+section .container img {
+    height: unset;
+    display: flex;
+    margin: auto;
+}
+section .container .mainbox{
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #0000000F;
+    border-radius: 10px;
+}
+section .container h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 5%;
+}
+section .container h1 span{
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFC85E;
+}
+section .container .xit{
+    background-color: #1FD85D;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 95px;
+
+}
+section .container .xit h6 {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 150%;
+    color: white;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+section .container .mainbox h2 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 130%;
+    color: black;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+section .container .mainbox img {
+    height: 194px;
+}
+section .container .mainbox .info{
+    margin-top: 20px;
+}
+section .container .mainbox .info .first{
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+section .container .mainbox .info .first h4{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3F4E65;
+}
+section .container .mainbox .info .first h5{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #111111;
+}
+section .container .mainbox .bottom{
+    display: flex;
+    grid-gap: 40px;
+    align-items: center;
+    margin-top: 15px;
+}
+section .container .mainbox .bottom h6{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 130%;
+    color: #111111;
+}
+section .container .mainbox .bottom button {
+    padding: 16px 25px;
+    border-radius: 80px;
+    background-color: #FFC85E;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    color: white;
+    border: none;
+}

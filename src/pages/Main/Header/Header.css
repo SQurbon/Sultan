@@ -1,0 +1,76 @@
+header{
+    width: 100%;
+    background: url("../../../assets/images/image 19.png") no-repeat center / cover ;
+}
+header .col-lg-6{
+    backdrop-filter: blur(3px);
+}
+header .hedtitle{
+    padding-top: 100px;
+    z-index: 111 !important;
+}
+header .hedtitle h1 {
+    z-index: 111;
+    color: white;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 0px;
+}
+header .hedtitle h2  {
+    z-index: 111;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    color: white;
+}
+header .hedtitle button{
+    padding: 20px 85px;
+    border: none;
+    border-radius: 80px;
+    background-color: #FFC85E;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 15%;
+    color: white;
+    margin-top: 50px;
+}
+header .hedtitle .titleBottom {
+    display: flex;
+    grid-gap: 30px;
+}
+header .hedtitle .titleBottom .box{
+    display: flex;
+    grid-gap: 10px;
+    margin: 100px 0px;
+}
+header .hedtitle .titleBottom .box .icons {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #FFC85E;
+    border-radius: 50%;
+    padding: 0px 15px;
+}
+header .hedtitle .titleBottom .box .icons svg{
+    color: white;
+}
+header .hedtitle .titleBottom .box h5 {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+}
+header .hedtitle .titleBottom .box h5 span {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}

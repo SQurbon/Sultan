@@ -2,29 +2,36 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
+
+
 .nav .navTop {
     width: 100%;
     padding: 15px 0px;
     border-bottom: 1px solid #3F4E65;
 }
-.nav .navTop .container .row .col-lg-12{
+
+.nav .navTop .container .row .col-lg-12 {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between !important;
 }
-.nav .navTop .navTopLeft{
+
+.nav .navTop .navTopLeft {
     display: flex;
-    align-items: center; 
+    align-items: center;
     grid-gap: 40px;
 }
+
 .nav .navTop .navTopLeft .location,
-.nav .navTop .navTopLeft .mail{
+.nav .navTop .navTopLeft .mail {
     display: flex;
     align-items: center;
     grid-gap: 15px;
 }
+
 .nav .navTop .navTopLeft .location h5,
 .nav .navTop .navTopLeft .mail h5 {
     font-weight: 600;
@@ -33,11 +40,13 @@ nav {
     color: black;
     margin-bottom: 0px;
 }
+
 .nav .navTop .navTopLeft .location h5 span,
-.nav .navTop .navTopLeft .mail h5 span{
+.nav .navTop .navTopLeft .mail h5 span {
     font-weight: 400;
     color: #3F4E65;
 }
+
 .nav .navTop ul {
     display: flex;
     align-items: center;
@@ -45,27 +54,32 @@ nav {
     margin-bottom: 0px;
     grid-gap: 60px;
 }
-.nav .navTop ul li a{
+
+.nav .navTop ul li a {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #3F4E65;
     text-decoration: none;
 }
+
 /* navBottom is starting */
 .nav .navBottom {
     width: 100%;
     padding: 10px 0px;
 }
-.nav .navBottom .col-lg-12{
+
+.nav .navBottom .col-lg-12 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .nav .navBottom .col-lg-12 img {
     height: unset;
 }
-.nav .navBottom button{
+
+.nav .navBottom button {
     padding: 21px 54px;
     background-color: #FFC85E;
     border-radius: 79px;
@@ -78,21 +92,26 @@ nav {
     grid-gap: 12px;
     align-items: center;
     margin-bottom: 0px;
+    cursor: pointer;
 }
-.nav .navBottom button svg{
+
+.nav .navBottom button svg {
     margin-bottom: -3px;
 }
+
 .nav .navBottom form {
     position: relative;
 }
-.nav .navBottom form input{
+
+.nav .navBottom form input {
     padding: 20px;
     background-color: #EDEDED;
     border-radius: 39px;
     border: none;
     outline: none;
 }
-.nav .navBottom form .back{
+
+.nav .navBottom form .back {
     position: absolute;
     top: 10px;
     right: 5px;
@@ -101,27 +120,32 @@ nav {
     border-radius: 50%;
 
 }
-.nav .navBottom form  .search {
+
+.nav .navBottom form .search {
     color: white;
 }
-.nav .navBottom .info{
+
+.nav .navBottom .info {
 
     display: flex;
     align-items: center;
     grid-gap: 14px;
 }
+
 .nav .navBottom .info h4 {
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
     color: #111111;
 }
+
 .nav .navBottom .info h5 {
     font-weight: 300;
     font-size: 12px;
     line-height: 150%;
     color: #3F4E65;
 }
+
 .nav .navBottom .info a {
     display: flex;
     font-weight: 400;
@@ -130,23 +154,289 @@ nav {
     color: #3F4E65;
     justify-content: end !important;
 }
-.nav .navBottom .shop{
+
+.nav .navBottom .shop {
     display: flex;
     align-items: center;
     grid-gap: 20px;
 }
-.nav .navBottom .shop svg{
+
+.nav .navBottom .shop svg {
     font-size: 40px;
 }
+
 .nav .navBottom .shop h4 {
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
     color: #111111;
 }
-.nav .navBottom .shop h4 span{
+
+.nav .navBottom .shop h4 span {
     font-weight: 300;
     font-size: 12px;
     line-height: 150%;
     color: #3F4E65;
 }
+
+.topnone {
+    display: none;
+}
+
+.BTN {
+    display: none;
+}
+
+.toplastbtn {
+    display: none;
+}
+
+.catalogBtn {
+    display: grid;
+    position: absolute;
+    grid-gap: 20px;
+    top: 170px;
+    left: 270px;
+    z-index: 222;
+}
+
+.catalogBtn button {
+    padding: 17px 40px;
+    border-radius: 80px;
+    background: transparent;
+    border: 2px solid #FFC85E !important;
+    color: black !important;
+    border: none;
+    color: white;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    box-shadow: 0 0 5px #FFC85E;
+    outline: none;
+    cursor: pointer;
+}
+.catalogBtn button:focus{
+    background-color: #FFC85E;
+    border: none !important;
+    color: white !important;
+    outline: none;
+}
+
+
+@media (max-width: 1199px) {
+    .nav .navTop ul li a {
+        font-size: 12px;
+    }
+
+    .nav .navTop .navTopLeft .location h5,
+    .nav .navTop .navTopLeft .mail h5 {
+        font-size: 13px;
+    }
+
+    .nav .navBottom button {
+        padding: 18px 15px;
+        grid-gap: 5px;
+    }
+
+    .nav .navBottom form input {
+        padding: 17px;
+    }
+
+    .nav .navBottom .shop {
+        grid-gap: 3px;
+    }
+
+    .nav .navBottom form .back {
+        top: 5px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .topnone {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 15px;
+        align-items: center;
+    }
+
+    .topnone .bars {
+        width: 40px;
+        height: 40px;
+        background-color: #FFC85E;
+        border-radius: 50%;
+    }
+
+    .topnone .bars svg {
+        display: flex;
+        margin: auto;
+        color: white;
+    }
+
+    .nav .navTop{
+        z-index: 111;
+    }
+
+    .topnone .topshop svg {
+        font-size: 35px;
+    }
+
+    .nav .navTop .navTopLeft {
+        display: grid;
+
+    }
+
+    .nav .navTop .col-lg-12 {
+        display: flex !important;
+    }
+
+    .nav .navTop ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .BTN {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .BTN button {
+        padding: 15px;
+        width: 50%;
+        border: none;
+        background: transparent;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        align-items: center;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        grid-gap: 10px;
+        color: #3F4E65;
+    }
+    .BTN .poisk{
+        width: 50% !important;
+        position: relative;
+        align-items: center;
+    }
+    .BTN .poisk svg{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        color: #3F4E65;
+        margin-bottom: -2px;
+    }
+    .BTN .poisk input{
+        width: 100% !important;
+        padding: 15px 35px;
+        border: none;
+        outline: none;
+        justify-content: center;
+    }
+
+    .BTN button:nth-child(1) {
+        border-right: 1px dashed gray;
+    }
+
+    .navBottom {
+        display: none;
+    }
+
+    .toplastbtn {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        width: 30%;
+        padding: 17px 0px;
+        border-radius: 80px;
+        background-color: #FFC85E;
+        border: none;
+        color: white;
+        align-items: center;
+        grid-gap: 10px;
+        font-weight: 700;
+    }
+    
+    .catalogBtn{
+        width: 50%;
+        top: 150px;
+        left: 0px;
+        background-color: #fff;
+        padding: 20px;
+        border-right: 1px dashed gray;
+        border-bottom: 1px dashed gray;
+        box-shadow: 0 3px 15px gray;
+
+    }
+    .catalogBtn button{
+        padding: 10px 15px;
+    }
+
+}
+
+@media (max-width: 575px){
+    .nav .navTop .col-lg-12{
+        width: 100%;
+        display: grid !important; 
+    }
+    .nav .navTop ul{
+        display: grid !important;
+        grid-template-columns: repeat(1,auto) !important;
+        grid-gap: 20px;
+        padding-top: 20px;
+    }
+    .nav .navTop ul li a{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3F4E65;
+    }
+    .nav .navTop .navTopLeft{
+        width: 100% !important;
+        grid-gap: 20px;
+        /* border-bottom: 1px dashed gray; */
+    }
+    .BTN button{
+        font-size: 16px;
+    }
+    .poisk svg{
+        font-size: 13px;
+    }
+    .toplastbtn{
+        width: 85%;
+        font-weight: 500;
+        align-items: center;
+    }
+    .toplastbtn svg{
+        margin-bottom: -2px;
+    }
+    .catalogBtn{
+        width: 100%;
+        top: 165px;
+
+    }
+    .catalogBtn button{
+        height: 60px !important;
+        font-size: 15px;
+    }
+    .BTN .poisk{
+        align-items: center !important;
+    }
+    .BTN .poisk input{
+        padding: 15px 10px 15px 30px;
+        margin-bottom: 5px;
+    }
+    .nav .navTop .navTopLeft .location, .nav .navTop .navTopLeft .mail{
+        font-size: 23px;
+    }
+    .nav .navTop .navTopLeft .location h5, .nav .navTop .navTopLeft .mail h5{
+        font-size: 16px;
+    }
+} 
