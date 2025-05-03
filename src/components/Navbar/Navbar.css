@@ -196,8 +196,11 @@ nav {
     position: absolute;
     grid-gap: 20px;
     top: 170px;
-    left: 270px;
+    left: 100px;
     z-index: 222;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 50px;
 }
 
 .catalogBtn button {
@@ -207,7 +210,7 @@ nav {
     border: 2px solid #FFC85E !important;
     color: black !important;
     border: none;
-    color: white;
+    color: white !important;
     align-items: center;
     grid-gap: 10px;
     font-weight: 500;
@@ -377,6 +380,7 @@ nav {
     }
     .catalogBtn button{
         padding: 10px 15px;
+        color: black !important;
     }
 
 }

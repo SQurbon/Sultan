@@ -1,0 +1,30 @@
+section.catalog{
+    width: 100%;
+}
+section.catalog .container:nth-child(2){
+    display: flex !important;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+section.catalog .container:nth-child(2) .image{
+    background-color: rgba(247, 232, 209, 0.222);
+    border-radius: 20px;
+}
+section.catalog .container:nth-child(2) .images img{
+    height: unset;
+}
+section.catalog .container:nth-child(2) p.text{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120px;
+    color: #3F4E65;
+    padding: 20px;
+}
+section.catalog .container:nth-child(2) h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    padding-top: 20px;
+    color: #111111;
+}
