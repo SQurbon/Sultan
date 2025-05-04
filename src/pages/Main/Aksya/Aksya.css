@@ -1,0 +1,61 @@
+.swipersection{
+    width: 100%;
+    background: url('../../../assets/images/www.png') no-repeat center / cover;
+    padding: 120px 100px;
+    margin-top: 100px;
+}
+.swipersection h4{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: white;
+    margin-bottom: 0px;
+    padding-left: 100px;
+}
+.swipersection h1{
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 110%;
+    color: white;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 100px;
+} 
+.swipersection p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: white;
+    padding-top: 35px;
+    padding-left: 100px;
+    color: white;
+}
+.swipersection button{
+    padding: 30px 70px;
+    margin-left: 100px;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 18px;
+    background-color: #FFC85E;
+    border: none;
+    border-radius: 80px;
+    color: white;
+    margin-top: 50px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    background-color: #fff;
+    padding: 25px 25px;
+    border-radius: 50%;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    background-color: #fff;
+    padding: 25px 25px;
+    border-radius: 50%;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    color: #FFC85E;
+    font-size: 25px;
+}
+.container-start{
+    margin-left: 100px;
+}
