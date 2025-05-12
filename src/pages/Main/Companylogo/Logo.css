@@ -1,0 +1,26 @@
+section.logo{
+    width: 100%;
+    overflow: hidden;
+
+}
+.navbar{
+    position: relative;
+    display: grid !important;
+    grid-template-columns: repeat(11,auto);
+    padding: 20px 0;
+    scrollbar-width: 1px !important;
+}
+.navbar img{
+    position: relative;
+    padding: 10px 20px;
+}
+.highlight {
+    top: 0px;
+    position: absolute;
+    background-color: #FFC85E;
+    border-radius: 8px;
+    z-index: 0;
+    transition: all 0.7s ease;
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }

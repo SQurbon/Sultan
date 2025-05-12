@@ -48,20 +48,39 @@ nav {
 }
 
 .nav .navTop ul {
-    display: flex;
-    align-items: center;
     padding-left: 0px;
     margin-bottom: 0px;
     grid-gap: 60px;
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .nav .navTop ul li a {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    color: #3F4E65;
+    color: #333;
     text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
 }
+
+.highlight {
+    top: 0px;
+    position: absolute;
+    background-color: #FFC85E;
+    border-radius: 8px;
+    z-index: 0;
+    transition: all 0.7s ease;
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
 
 /* navBottom is starting */
 .nav .navBottom {
@@ -218,7 +237,8 @@ nav {
     outline: none;
     cursor: pointer;
 }
-.catalogBtn button:focus{
+
+.catalogBtn button:focus {
     background-color: #FFC85E;
     border: none !important;
     color: white !important;
@@ -277,7 +297,7 @@ nav {
         color: white;
     }
 
-    .nav .navTop{
+    .nav .navTop {
         z-index: 111;
     }
 
@@ -323,19 +343,22 @@ nav {
         grid-gap: 10px;
         color: #3F4E65;
     }
-    .BTN .poisk{
+
+    .BTN .poisk {
         width: 50% !important;
         position: relative;
         align-items: center;
     }
-    .BTN .poisk svg{
+
+    .BTN .poisk svg {
         position: absolute;
         top: 0px;
         left: 10px;
         color: #3F4E65;
         margin-bottom: -2px;
     }
-    .BTN .poisk input{
+
+    .BTN .poisk input {
         width: 100% !important;
         padding: 15px 35px;
         border: none;
@@ -366,8 +389,8 @@ nav {
         grid-gap: 10px;
         font-weight: 700;
     }
-    
-    .catalogBtn{
+
+    .catalogBtn {
         width: 50%;
         top: 150px;
         left: 0px;
@@ -378,69 +401,85 @@ nav {
         box-shadow: 0 3px 15px gray;
 
     }
-    .catalogBtn button{
+
+    .catalogBtn button {
         padding: 10px 15px;
         color: black !important;
     }
 
 }
 
-@media (max-width: 575px){
-    .nav .navTop .col-lg-12{
+@media (max-width: 575px) {
+    .nav .navTop .col-lg-12 {
         width: 100%;
-        display: grid !important; 
-    }
-    .nav .navTop ul{
         display: grid !important;
-        grid-template-columns: repeat(1,auto) !important;
+    }
+
+    .nav .navTop ul {
+        display: grid !important;
+        grid-template-columns: repeat(1, auto) !important;
         grid-gap: 20px;
         padding-top: 20px;
     }
-    .nav .navTop ul li a{
+
+    .nav .navTop ul li a {
         font-weight: 400;
         font-size: 14px;
         line-height: 150%;
         color: #3F4E65;
     }
-    .nav .navTop .navTopLeft{
+
+    .nav .navTop .navTopLeft {
         width: 100% !important;
         grid-gap: 20px;
         /* border-bottom: 1px dashed gray; */
     }
-    .BTN button{
+
+    .BTN button {
         font-size: 16px;
     }
-    .poisk svg{
+
+    .poisk svg {
         font-size: 13px;
     }
-    .toplastbtn{
+
+    .toplastbtn {
         width: 85%;
         font-weight: 500;
         align-items: center;
     }
-    .toplastbtn svg{
+
+    .toplastbtn svg {
         margin-bottom: -2px;
     }
-    .catalogBtn{
+
+    .catalogBtn {
         width: 100%;
         top: 165px;
 
     }
-    .catalogBtn button{
+
+    .catalogBtn button {
         height: 60px !important;
         font-size: 15px;
     }
-    .BTN .poisk{
+
+    .BTN .poisk {
         align-items: center !important;
     }
-    .BTN .poisk input{
+
+    .BTN .poisk input {
         padding: 15px 10px 15px 30px;
         margin-bottom: 5px;
     }
-    .nav .navTop .navTopLeft .location, .nav .navTop .navTopLeft .mail{
+
+    .nav .navTop .navTopLeft .location,
+    .nav .navTop .navTopLeft .mail {
         font-size: 23px;
     }
-    .nav .navTop .navTopLeft .location h5, .nav .navTop .navTopLeft .mail h5{
+
+    .nav .navTop .navTopLeft .location h5,
+    .nav .navTop .navTopLeft .mail h5 {
         font-size: 16px;
     }
-} 
+}

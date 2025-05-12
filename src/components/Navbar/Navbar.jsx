@@ -15,6 +15,38 @@ export default function Navbar() {
     const [isVisible, setIsVisible] = useState(!isMobile);
     const [catalog, setCatalog] = useState(false)
 
+
+
+
+
+
+    const highlightRef = useRef(null);
+    const navbarRef = useRef(null);
+
+    const moveHighlight = (e) => {
+        const link = e.target;
+        const highlight = highlightRef.current;
+        const navbar = navbarRef.current;
+        const rect = link.getBoundingClientRect();
+        const parentRect = navbar.getBoundingClientRect();
+
+        highlight.style.left = `${rect.left - parentRect.left + rect.width / 2}px`;
+        highlight.style.top = `${rect.top - parentRect.top}px`;
+        highlight.style.width = `${rect.width}px`;
+        highlight.style.height = `${rect.height}px`;
+        highlight.style.opacity = 1;
+    };
+
+
+
+
+
+
+
+
+
+
+
     useEffect(() => {
         const handleResize = () => {
             const mobile = window.innerWidth <= 768;
@@ -33,8 +65,8 @@ export default function Navbar() {
         <>
             <div className="topnone">
                 <div onClick={() => setIsVisible(!isVisible)} className="bars" >
-                {isVisible ? <RxCross1 /> : <FaBars />}
-                    
+                    {isVisible ? <RxCross1 /> : <FaBars />}
+
                 </div>
                 <img className='mediaLogo' src={logo} alt="" />
                 <div className="topshop">
@@ -67,18 +99,19 @@ export default function Navbar() {
                                                 <span>На связи в любое время</span></h5>
                                         </div>
                                     </div>
-                                    <ul>
+                                    <ul ref={navbarRef}>
+                                        <div className="highlight" ref={highlightRef}></div>
                                         <li>
-                                            <a href="">О компании</a>
+                                            <a onMouseOver={moveHighlight} href="">О компании</a>
                                         </li>
                                         <li>
-                                            <a href="">Доставка и оплата</a>
+                                            <a onMouseOver={moveHighlight} href="">Доставка и оплата</a>
                                         </li>
                                         <li>
-                                            <a href="">Возврат</a>
+                                            <a onMouseOver={moveHighlight} href="">Возврат</a>
                                         </li>
                                         <li>
-                                            <a href="">Контакты</a>
+                                            <a onMouseOver={moveHighlight} href="">Контакты</a>
                                         </li>
                                     </ul>
                                 </Col>

@@ -7,6 +7,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Aksya.css'
+
+
 // import required modules
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 export default function Aksya() {
