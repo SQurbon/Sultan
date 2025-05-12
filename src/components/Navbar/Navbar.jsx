@@ -81,7 +81,7 @@ export default function Navbar() {
                     <input type="text" placeholder='Поиск' />
                 </div>
             </div>
-
+            
             {isVisible && (
                 <div className="nav">
                     <div className="navTop">
