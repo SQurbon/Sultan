@@ -25,13 +25,18 @@ section.logo{
     transform: translate(-50%, 0);
     opacity: 0;
   }
+
  @media (max-width: 767px) {
-    .navbar{
+    .navbar {
         overflow-x: scroll !important;
     }
-    section.logo .container{
+
+    section.logo .container {
         padding: 0px;
     }
-    
+
+    .navbar img {
+        display: inline-block !important;
+        width: 120px !important;
+    }
   }
- 
