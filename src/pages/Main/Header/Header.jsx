@@ -9,11 +9,13 @@ export default function Header() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="hedtitle">
-                                <h1>Бытовая химия,
-                                    косметика
-                                    и хозтовары
-                                </h1>
-                                <h2>оптом по кокчетаву и области</h2>
+                                <div className="sss">
+                                    <h1>Бытовая химия,
+                                        косметика
+                                        и хозтовары
+                                    </h1>
+                                    <h2>оптом по кокчетаву и области</h2>
+                                </div>
                                 <button>В КАТАЛОГ</button>
                                 <div className="titleBottom">
                                     <div className="box">

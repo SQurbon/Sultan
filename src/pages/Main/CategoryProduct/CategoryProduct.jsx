@@ -5,12 +5,9 @@ export default function CategoryProduct() {
     return (
         <>
             <section className='catalog'>
-                <div className="container">
-                    <div className="row">
-                        <h1><span>категории</span> товаров</h1>
-                        <p className="text">10 000+ ходовых позиций по спецмальным ценам</p>
-                    </div>
-                </div>
+                            <h1><span>категории</span> товаров</h1>
+                            <p className="text">10 000+ ходовых позиций по спецмальным ценам</p>
+                        
                 <div className="container">
 
                     {CategoryProductContext.map(item => (

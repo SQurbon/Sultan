@@ -100,3 +100,32 @@ section .container .mainbox .bottom button {
     color: white;
     border: none;
 }
+@media (max-width: 1199px){
+       section .container .mainbox:nth-child(5),
+    section .container .mainbox:nth-child(6),
+    section .container .mainbox:nth-child(7),
+    section .container .mainbox:nth-child(8){
+        display: none;
+    }
+    section .container{
+        display: grid;
+        grid-template-columns: repeat(2,auto)
+    }
+    section h1 {
+        text-align: center;
+    }
+}
+@media (max-width: 767px){
+    section .container .mainbox .bottom button{
+        padding: 15px 10px;
+        font-size: 9px;
+        align-items: center !important;
+    }
+    section .container{
+        padding: 0px !important;
+        width: 100% !important;
+        display: grid;
+        grid-template-columns: repeat(1,auto)
+    }
+}
+

@@ -56,6 +56,44 @@
     color: #FFC85E;
     font-size: 25px;
 }
+section .container:nth-child(1){
+    width: 100dvh !important;
+}
+p.text{
+    text-align: center;
+}
 .container-start{
     margin-left: 100px;
+}
+@media (max-width: 575px) {
+ .swipersection{
+    margin-top: 60px;
+    width: 100% !important;
+    padding: 15px;
+ }
+ .swipersection h4{
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+ }
+ .swipersection h1{
+    padding: 0px;
+    font-size: 20px;
+ }
+ .swipersection p{
+    padding: 10px 0px 0px 0px;
+    text-align: center !important;
+    font-size: 12px;
+ }
+ .swipersection button{
+    margin: 0px;
+    padding: 20px ;
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+ }
+ .swiper-button-next,  .swiper-button-prev{
+    padding: 5px 20px !important;
+    margin-top: 30px;
+ }
 }

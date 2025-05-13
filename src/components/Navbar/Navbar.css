@@ -247,6 +247,12 @@ nav {
 
 
 @media (max-width: 1199px) {
+    .highlight{
+        top: 15px !important;
+    }
+    .nav .navTop ul{
+        grid-gap: 0;
+    }
     .nav .navTop ul li a {
         font-size: 12px;
     }

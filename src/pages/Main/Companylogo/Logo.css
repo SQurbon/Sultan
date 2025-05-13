@@ -9,6 +9,7 @@ section.logo{
     grid-template-columns: repeat(11,auto);
     padding: 20px 0;
     scrollbar-width: 1px !important;
+    overflow-x: scroll;
 }
 .navbar img{
     position: relative;
@@ -24,3 +25,13 @@ section.logo{
     transform: translate(-50%, 0);
     opacity: 0;
   }
+ @media (max-width: 767px) {
+    .navbar{
+        overflow-x: scroll !important;
+    }
+    section.logo .container{
+        padding: 0px;
+    }
+    
+  }
+ 

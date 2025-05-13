@@ -41,13 +41,9 @@ export default function Logo() {
     return (
         <>
             <section className="logo">
-                <div className="container">
-                    <div className="row">
-                        <h1><span>Лучшие</span> товары</h1>
-                        <p className="text">От ведущих мировых брендов</p>
-                    </div>
+                    <h1><span>Лучшие</span> товары</h1>
+                    <p className="text">От ведущих мировых брендов</p>
 
-                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">

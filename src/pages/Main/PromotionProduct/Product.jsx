@@ -5,10 +5,8 @@ import './Product.css'
 export default function Product() {
     return (
         <section>
-            <div className="container">
-                <h1><span>Акционные</span> товары</h1>
-
-            </div>
+                        <h1><span>Акционные</span> товары</h1>
+                    
             <div className="container">
                 {PromotionProduct.map(item => (
                     <>
