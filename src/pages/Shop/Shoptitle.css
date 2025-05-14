@@ -1,0 +1,76 @@
+section.shoptitle{
+    width: 100%;
+    margin-top: 100px;
+}
+section.shoptitle .container .row{
+    width: 90vw !important;
+    align-items: center;
+    margin-bottom: 100px;
+}
+section.shoptitle h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #111111;
+
+}
+section.shoptitle .total{
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+section.shoptitle .total .caunt{
+    display: flex;
+    width: 600px;
+    justify-content: space-between !important;
+    align-items: center;
+    justify-content: start !important;
+    grid-gap: 20px;
+}
+section.shoptitle .total .caunt .minus,
+section.shoptitle .total .caunt .plus {
+    width: 44px;
+    height: 33px;
+    background-color:  #FECA6E;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+section.shoptitle .total .caunt .minus svg,
+section.shoptitle .total .caunt .plus svg {
+    color: #3F4E65;
+}
+section.shoptitle .total .caunt button {
+    padding: 20px 30px;
+    background-color: #FFC85E;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 90px;
+}
+section.shoptitle .total .info {
+    display: grid;
+    grid-gap: 5px;
+}
+section.shoptitle .total .info .first {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+section.shoptitle .total .info .first:last-child {
+    margin-top: 5px;
+}
+section.shoptitle .total .info .first h4 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3F4E65;
+    margin-bottom: 0px;
+}
+section.shoptitle .total .info .first h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #111111;
+    margin-bottom: 0px;
+}

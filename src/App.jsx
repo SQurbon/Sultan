@@ -1,19 +1,26 @@
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Router, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './routes/HomePageRoutes/HomePage';
 import Footer from './components/Footer/Footer';
+import ShopRoutes from './routes/ShopRoutes/ShopRoutes';
 
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />  
-      </Routes>
-      <Footer/>
+      
+
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/shop/:id" element={<ShopRoutes />} />
+
+          </Routes>
+
+       
+      <Footer />
 
     </>
   )
