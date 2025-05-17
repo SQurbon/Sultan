@@ -5,8 +5,9 @@ import fourth from '../../assets/images/fourth.png'
 
 export const PromotionProduct = [
     {
+        id: 1,
         img: first,
-        h1: "AOS Ср-во для мытья посуды Апельсин+мята:",
+        h1: "Sorti Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
         h3: "4604049097548",
         h4: "Производитель:",
@@ -17,8 +18,9 @@ export const PromotionProduct = [
         btn: "В КОРЗИНУ"
     },
     {
+        id: 2,
         img: second,
-        h1: "AOS Ср-во для мытья посуды Апельсин+мята:",
+        h1: "AOS О торговой марке AOS - интернет-магазин:",
         h2: "Штрихкод:",
         h3: "4604049097548",
         h4: "Производитель:",
@@ -29,6 +31,7 @@ export const PromotionProduct = [
         btn: "В КОРЗИНУ"
     },
     {
+        id: 3,
         img: third,
         h1: "ARIEL Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
@@ -41,6 +44,7 @@ export const PromotionProduct = [
         btn: "В КОРЗИНУ"
     },
     {
+        id: 4,
         img: fourth,
         h1: "BIMAX Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
@@ -53,6 +57,7 @@ export const PromotionProduct = [
         btn: "В КОРЗИНУ"
     },
     {
+        id: 5,
         img: first,
         h1: "AOS Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
@@ -65,6 +70,7 @@ export const PromotionProduct = [
         btn: "В КОРЗИНУ"
     },
     {
+        id: 6,
         img: second,
         h1: "AOS Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
@@ -77,6 +83,7 @@ export const PromotionProduct = [
         btn: "В КОРЗИНУ"
     },
     {
+        id: 7,
         img: third,
         h1: "ARIEL Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
@@ -89,6 +96,7 @@ export const PromotionProduct = [
         btn: "В КОРЗИНУ"
     },
     {
+        id: 8,
         img: fourth,
         h1: "BIMAX Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
