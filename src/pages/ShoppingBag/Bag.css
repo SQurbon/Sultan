@@ -67,3 +67,55 @@ section.bag .main button {
     border-radius: 50%;
     border: none;
 }
+
+@media (max-width: 1199px) {
+    section.bag .main{
+        grid-gap: 19px;
+    }
+    section.bag .main .chart{
+        grid-gap: 20px;
+    }
+    section.bag .main .chart h5{
+        font-size: 23px;
+    }
+}
+@media (max-width: 991px) {
+    section.bag .main {
+        width: 100%;
+        display: grid;
+        margin: auto !important;
+        justify-content: center !important;
+    }
+    section .container{
+        display: block !important;
+    }
+    section.bag .row {
+        width: 100% !important;
+    }
+    section.bag .main h2{
+        width: 370px;
+        font-size: 24px;
+    }
+    section.bag .main p.text{
+        width: 370px;
+    }
+    section.bag .main img{
+        display: flex !important;
+        margin: auto !important;
+        justify-content: center !important;
+    }
+}
+@media (max-width: 575px){
+    section.bag .main h2{
+        width: 100%
+    }
+    section.bag .main p.text{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    section.bag .main .chart{
+        display: flex;
+        margin: auto;
+    }
+}

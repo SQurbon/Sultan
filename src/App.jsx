@@ -12,7 +12,6 @@ import { CartProvider } from './pages/Shop/CardContext';
 export default function App() {
   return (
     < >
-
       <CartProvider> {/* ✅ Butun ilovani o‘raydi */}
         <BrowserRouter>
           <Navbar />
