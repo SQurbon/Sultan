@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useReducer } from 'react';
 
 const CartContext = createContext();
@@ -7,18 +8,23 @@ const initialState = {
 };
 
 function reducer(state, action) {
+    const newarr = {
+        id: Date.now(),
+        h1: action.payload.h1,
+        img: action.payload.img,
+        price: action.payload.price
+    };
     switch (action.type) {
         case "ADD_TO_CART":
-            console.log("Yangi item:", action.payload);
-            console.log("Avvalgi holat:", state.cart);
+            
             return {
                 ...state,
-                cart: [...state.cart, action.payload],
+                cart: [...state.cart, newarr],
             };
         case 'REMOVE_FROM_CART':
             return {
                 ...state,
-                cart: state.cart.filter(item => item.id !== action.payload.id),
+                cart: state.cart.filter(item => item.id != action.payload.id),
             };
         default:
             return state;

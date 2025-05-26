@@ -9,8 +9,8 @@ import { CartProvider } from './pages/Shop/CardContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <CartProvider>
-      <StrictMode>
+      {/* <StrictMode> */}
         <App />
-      </StrictMode>
+      {/* </StrictMode> */}
   </CartProvider>
 )

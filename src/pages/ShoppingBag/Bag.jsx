@@ -8,7 +8,10 @@ import './Bag.css'
 export default function Cart() {
     const { cart, dispatch } = useCart();
 
-    console.log('Cart:', cart); // 👈 Bu yerda itemlar chiqyaptimi?
+
+       const total = cart.reduce((sum, product) => sum + product.price, 0);
+
+
 
     return (
         <section className='bag'>
@@ -16,6 +19,7 @@ export default function Cart() {
                 <div className="row">
                     <div className="col-lg-12">
                         <h1>Корзина</h1>
+                        <h1>{total}</h1>
                         {cart.length === 0 ? (
                             <p>Savat bo‘sh</p>
                         ) : (

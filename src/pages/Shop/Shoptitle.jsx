@@ -15,6 +15,8 @@ export default function Shoptitle() {
     const { dispatch } = useCart(); // <-- Contextdan dispatch olamiz
 
     if (!item) return <p>Mahsulot topilmadi</p>;
+    console.log(item.price);
+    
 
 
 
@@ -23,8 +25,11 @@ export default function Shoptitle() {
     const handleAddToCart = () => {
         setCount(count + 1)
         dispatch({ type: 'ADD_TO_CART', payload: item });
-        
     };
+    const handleRemoveToCart = () => {
+        setCount(count <= 0 ? 0 : count - 1)
+        dispatch({ type: 'REMOVE_FROM_CART', payload: item });
+    }
 
     const handlenavigate = () => {
         navigate('/bag'); // <-- Qo‘shildi
@@ -51,7 +56,7 @@ export default function Shoptitle() {
                                     <div className="first"><h4>Цена:</h4><h5>{item.price}</h5></div>
                                 </div>
                                 <div className="caunt">
-                                    <div className="minus"><FaMinus /></div>
+                                    <div className="minus" onClick={handleRemoveToCart}><FaMinus /></div>
                                     <h3>{count}</h3>
                                     <div className="plus" onClick={handleAddToCart}><FaPlus /></div>
                                     <button onClick={handlenavigate}>В корзину <MdOutlineShoppingCart /></button>
