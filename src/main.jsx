@@ -5,11 +5,12 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css';
+import { CartProvider } from './pages/Shop/CardContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <StrictMode>
-      <App />
-    </StrictMode>
-  </BrowserRouter>
+  <CartProvider>
+      {/* <StrictMode> */}
+        <App />
+      {/* </StrictMode> */}
+  </CartProvider>
 )

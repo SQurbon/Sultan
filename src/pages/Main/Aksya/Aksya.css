@@ -56,9 +56,7 @@
     color: #FFC85E;
     font-size: 25px;
 }
-section .container:nth-child(1){
-    width: 100dvh !important;
-}
+
 p.text{
     text-align: center;
 }

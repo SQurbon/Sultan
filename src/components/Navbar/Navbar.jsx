@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {  useEffect, useRef, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
@@ -10,7 +10,13 @@ import { FaBars } from "react-icons/fa6";
 import './Navbar.css'
 import logo from '../../assets/images/3.1 Лого Султан RGB.svg'
 import user from '../../assets/images/Group 100.svg'
-export default function Navbar() {
+export default function Navbar() {  
+
+
+
+
+
+  
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
     const [isVisible, setIsVisible] = useState(!isMobile);
     const [catalog, setCatalog] = useState(false)
@@ -144,7 +150,7 @@ export default function Navbar() {
                                     <button>Прайс-лист <IoMdDownload /></button>
                                     <div className="shop">
                                         <LiaShoppingCartSolid />
-                                        <h4><span>Корзина</span> <br />12 478 ₸ </h4>
+                                        <h4><span>Корзина</span> <br /> ₸</h4>
                                     </div>
                                 </Col>
                             </Row>

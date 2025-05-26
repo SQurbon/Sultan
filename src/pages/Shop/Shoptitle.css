@@ -1,0 +1,170 @@
+section.shoptitle {
+    width: 100%;
+    margin-top: 100px;
+}
+
+section.shoptitle .container .row {
+    width: 90vw !important;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+section.shoptitle h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #111111;
+
+}
+
+section.shoptitle .total {
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+section.shoptitle .total .caunt {
+    display: flex;
+    width: 600px;
+    justify-content: space-between !important;
+    align-items: center;
+    justify-content: start !important;
+    grid-gap: 20px;
+}
+
+section.shoptitle .total .caunt .minus,
+section.shoptitle .total .caunt .plus {
+    width: 44px;
+    height: 33px;
+    background-color: #FECA6E;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+section.shoptitle .total .caunt .minus svg,
+section.shoptitle .total .caunt .plus svg {
+    color: #3F4E65;
+}
+
+section.shoptitle .total .caunt button {
+    padding: 20px 30px;
+    background-color: #FFC85E;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 90px;
+}
+
+section.shoptitle .total .info {
+    display: grid;
+    grid-gap: 5px;
+}
+
+section.shoptitle .total .info .first {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+section.shoptitle .total .info .first:last-child {
+    margin-top: 5px;
+}
+
+section.shoptitle .total .info .first h4 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3F4E65;
+    margin-bottom: 0px;
+}
+
+section.shoptitle .total .info .first h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #111111;
+    margin-bottom: 0px;
+}
+
+
+
+
+@media (max-width: 991px) {
+    section.shoptitle h2 {
+        text-align: center;
+    }
+
+    section.shoptitle .total {
+        width: 100%;
+        display: flex;
+        justify-content: space-between !important;
+        margin-top: 30px;
+    }
+
+    section.shoptitle .total .caunt {
+        justify-content: space-around !important;
+        /* width: unset; */
+    }
+
+}
+
+@media (max-width: 767px) {
+    section.shoptitle .container .row {
+        width: 68% !important;
+    }
+
+    section.shoptitle .total .caunt {
+        grid-gap: 5px;
+    }
+
+    section.shoptitle .total .caunt button {
+        padding: 10px 11px;
+    }
+
+
+}
+
+@media (max-width: 575px) {
+    section.shoptitle .container {
+        width: 100%;
+    }
+
+    section.shoptitle .container .row {
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+
+    section.shoptitle .total {
+        display: grid;
+        margin: auto;
+        justify-content: center !important;
+    }
+    section.shoptitle h2{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    section.shoptitle .total .caunt{
+        width: unset;
+    }
+    section.shoptitle .total .info{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        width: 100%;
+        grid-gap: 10px;
+    }
+    section.shoptitle .total .info .first h4{
+        font-size: 15px;
+    }
+    section.shoptitle .total .info .first h5{
+        font-size: 15px;
+    }
+    section .container .mainbox h2  {
+        text-align: center !important;
+    }
+    section .container .mainbox .bottom button{
+        padding: 20px 30px;
+        display: flex;
+        margin: auto;
+    }
+
+}
