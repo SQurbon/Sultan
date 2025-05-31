@@ -1,5 +1,5 @@
-import React, {  useEffect, useRef, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
+import React, { useEffect, useRef, useState, } from 'react'
+import { Badge, Col, Container, Row } from 'react-bootstrap';
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { RxCross1, RxDashboard } from "react-icons/rx";
@@ -10,19 +10,12 @@ import { FaBars } from "react-icons/fa6";
 import './Navbar.css'
 import logo from '../../assets/images/3.1 Лого Султан RGB.svg'
 import user from '../../assets/images/Group 100.svg'
-export default function Navbar() {  
+// import { Badge } from "@/components/ui/badge"
+export default function Navbar() {
 
-
-
-
-
-  
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
     const [isVisible, setIsVisible] = useState(!isMobile);
     const [catalog, setCatalog] = useState(false)
-
-
-
 
 
 
@@ -43,16 +36,6 @@ export default function Navbar() {
         highlight.style.opacity = 1;
     };
 
-
-
-
-
-
-
-
-
-
-
     useEffect(() => {
         const handleResize = () => {
             const mobile = window.innerWidth <= 768;
@@ -71,7 +54,7 @@ export default function Navbar() {
         <>
             <div className="topnone">
                 <div onClick={() => setIsVisible(!isVisible)} className="bars" >
-                    {isVisible ? <RxCross1 /> : <FaBars />}
+                    {isVisible ? <RxCross1 /> : <FaBars style={{ transition: "1s" }} />}
 
                 </div>
                 <img className='mediaLogo' src={logo} alt="" />
@@ -87,7 +70,7 @@ export default function Navbar() {
                     <input type="text" placeholder='Поиск' />
                 </div>
             </div>
-            
+
             {isVisible && (
                 <div className="nav">
                     <div className="navTop">

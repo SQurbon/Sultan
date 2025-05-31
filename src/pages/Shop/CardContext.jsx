@@ -1,44 +1,42 @@
-
-import React, { createContext, useContext, useReducer } from 'react';
+// src/context/CartContext.js
+import { createContext, useContext, useReducer } from "react";
 
 const CartContext = createContext();
 
 const initialState = {
-    cart: [],
+  cartItems: [],
+  count: 0,
 };
 
-function reducer(state, action) {
-    const newarr = {
-        id: Date.now(),
-        h1: action.payload.h1,
-        img: action.payload.img,
-        price: action.payload.price
-    };
-    switch (action.type) {
-        case "ADD_TO_CART":
-            
-            return {
-                ...state,
-                cart: [...state.cart, newarr],
-            };
-        case 'REMOVE_FROM_CART':
-            return {
-                ...state,
-                cart: state.cart.filter(item => item.id != action.payload.id),
-            };
-        default:
-            return state;
-    }
+function cartReducer(state, action) {
+  switch (action.type) {
+    case "ADD_TO_CART":
+      return {
+        ...state,
+        cartItems: [...state.cartItems, action.payload],
+        count: state.count + 1,
+      };
+    case "REMOVE_FROM_CART":
+      return {
+        ...state,
+        cartItems: state.cartItems.filter(item => item.id !== action.payload.id),
+        count: Math.max(0, state.count - 1),
+      };
+    default:
+      return state;
+  }
 }
 
-export const CartProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(reducer, initialState);
+export function CartProvider({ children }) {
+  const [state, dispatch] = useReducer(cartReducer, initialState);
 
-    return (
-        <CartContext.Provider value={{ cart: state.cart, dispatch }}>
-            {children}
-        </CartContext.Provider>
-    );
-};
+  return (
+    <CartContext.Provider value={{ ...state, dispatch }}>
+      {children}
+    </CartContext.Provider>
+  );
+}
 
-export const useCart = () => useContext(CartContext);
+export function useCart() {
+  return useContext(CartContext);
+}

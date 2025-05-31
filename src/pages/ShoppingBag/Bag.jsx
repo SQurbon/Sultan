@@ -5,7 +5,7 @@ import { FaMinus } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
 import { FaTrashAlt } from "react-icons/fa";
 import './Bag.css'
-export default function Cart() {
+export default function Bag() {
     const { cart, dispatch } = useCart();
 
 
