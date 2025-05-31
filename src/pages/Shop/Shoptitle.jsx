@@ -2,17 +2,14 @@ import { useLocation, useNavigate } from "react-router-dom";
 import './Shoptitle.css';
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
-// import { useCart } from "../../context/CartContext"; // <-- Qo‘shildi
 import Product from "../Main/PromotionProduct/Product";
 import { useCart } from "./CardContext";
-import { useState } from "react";
 
 export default function Shoptitle() {
-    const [count, setCount] = useState(0)
     const location = useLocation();
     const item = location.state;
   const navigate = useNavigate();
-    const { dispatch } = useCart(); // <-- Contextdan dispatch olamiz
+    const {count, dispatch } = useCart(); // <-- Contextdan dispatch olamiz
 
     if (!item) return <p>Mahsulot topilmadi</p>;
     console.log(item.price);
@@ -23,11 +20,9 @@ export default function Shoptitle() {
 
 
     const handleAddToCart = () => {
-        setCount(count + 1)
         dispatch({ type: 'ADD_TO_CART', payload: item });
     };
     const handleRemoveToCart = () => {
-        setCount(count <= 0 ? 0 : count - 1)
         dispatch({ type: 'REMOVE_FROM_CART', payload: item });
     }
 

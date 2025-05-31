@@ -8,9 +8,11 @@ import 'swiper/css';
 import { CartProvider } from './pages/Shop/CardContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <CartProvider>
-      {/* <StrictMode> */}
+  <BrowserRouter>
+    <React.StrictMode>
+      <CartProvider>
         <App />
-      {/* </StrictMode> */}
-  </CartProvider>
+      </CartProvider>
+    </React.StrictMode>
+  </BrowserRouter>
 )
