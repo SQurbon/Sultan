@@ -9,7 +9,8 @@ export default function Bag() {
     const { cart, dispatch } = useCart();
 
 
-       const total = cart.reduce((sum, product) => sum + product.price, 0);
+       const total = cart.reduce((sum, item) => sum + item.price,0);
+       
 
 
 

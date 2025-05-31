@@ -14,7 +14,7 @@ export const PromotionProduct = [
         h5: "Нэфис",
         h44: "Бренд:",
         h55: "AOS",
-        price: "48.76",
+        price: "48,76",
         btn: "В КОРЗИНУ"
     },
     {
