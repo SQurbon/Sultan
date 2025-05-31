@@ -10,7 +10,6 @@ import { FaBars } from "react-icons/fa6";
 import './Navbar.css'
 import logo from '../../assets/images/3.1 Лого Султан RGB.svg'
 import user from '../../assets/images/Group 100.svg'
-import { useCart } from '../../pages/Shop/CardContext';
 // import { Badge } from "@/components/ui/badge"
 export default function Navbar() {
 
@@ -18,7 +17,6 @@ export default function Navbar() {
     const [isVisible, setIsVisible] = useState(!isMobile);
     const [catalog, setCatalog] = useState(false)
 
-    const { cartItems, count } = useCart();
 
 
     const highlightRef = useRef(null);
@@ -62,7 +60,6 @@ export default function Navbar() {
                 <img className='mediaLogo' src={logo} alt="" />
                 <div className="topshop">
                     <LiaShoppingCartSolid />
-                    <Badge variant="default |outline | secondary | destructive">{count}</Badge>
                 </div>
 
             </div>
@@ -136,7 +133,6 @@ export default function Navbar() {
                                     <button>Прайс-лист <IoMdDownload /></button>
                                     <div className="shop">
                                         <LiaShoppingCartSolid />
-                                        <Badge variant="default |outline | secondary | destructive">{count}</Badge>
                                         <h4><span>Корзина</span> <br /> ₸</h4>
                                     </div>
                                 </Col>
