@@ -6,6 +6,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import Product from "../Main/PromotionProduct/Product";
 import { useCart } from "./CardContext";
 import { useState } from "react";
+import { Badge } from "react-bootstrap";
 
 export default function Shoptitle() {
     const [count, setCount] = useState(0)
@@ -57,9 +58,8 @@ export default function Shoptitle() {
                                 </div>
                                 <div className="caunt">
                                     <div className="minus" onClick={handleRemoveToCart}><FaMinus /></div>
-                                    <h3>{count}</h3>
                                     <div className="plus" onClick={handleAddToCart}><FaPlus /></div>
-                                    <button onClick={handlenavigate}>В корзину <MdOutlineShoppingCart /></button>
+                                    <button onClick={handlenavigate}>В корзину < MdOutlineShoppingCart  className="shop"/> <Badge variant="default |outline | secondary | destructive"><p>{count}</p></Badge></button>
                                 </div>
                             </div>
                         </div>
