@@ -15,10 +15,6 @@ export default function Shoptitle() {
     console.log(item.price);
     
 
-
-
-
-
     const handleAddToCart = () => {
         dispatch({ type: 'ADD_TO_CART', payload: item });
     };
@@ -30,9 +26,6 @@ export default function Shoptitle() {
         navigate('/bag'); // <-- Qo‘shildi
     }
 
-
-
-    
     return (
         <>
             <section className="shoptitle">

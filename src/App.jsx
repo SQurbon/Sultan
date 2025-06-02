@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer';
 import ShopRoutes from './routes/ShopRoutes/ShopRoutes';
 import { CartProvider } from './pages/Shop/CardContext';
 import Bag from '../src/pages/ShoppingBag/Bag';
-import { Card } from 'react-bootstrap';
 
 
 export default function App() {
