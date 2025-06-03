@@ -4,6 +4,7 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import Product from "../Main/PromotionProduct/Product";
 import { useCart } from "./CardContext";
+import { Badge } from "react-bootstrap";
 
 export default function Shoptitle() {
     const location = useLocation();
@@ -13,11 +14,11 @@ export default function Shoptitle() {
 
     if (!item) return <p>Mahsulot topilmadi</p>;
     console.log(item.price);
-    
 
     const handleAddToCart = () => {
         dispatch({ type: 'ADD_TO_CART', payload: item });
     };
+
     const handleRemoveToCart = () => {
         dispatch({ type: 'REMOVE_FROM_CART', payload: item });
     }
@@ -46,7 +47,7 @@ export default function Shoptitle() {
                                 <div className="caunt">
                                     <div className="minus" onClick={handleRemoveToCart}><FaMinus /></div>
                                     <div className="plus" onClick={handleAddToCart}><FaPlus /></div>
-                                    <button onClick={handlenavigate}>В корзину < MdOutlineShoppingCart  className="shop"/> <Badge variant="default |outline | secondary | destructive"><p>{count}</p></Badge></button>
+                                    <button onClick={handlenavigate}>В корзину < MdOutlineShoppingCart  className="shop"/><Badge     variant="default |outline | secondary | destructive"><p>{count}</p></Badge></button>
                                 </div>
                             </div>
                         </div>

@@ -5,31 +5,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './routes/HomePageRoutes/HomePage';
 import Footer from './components/Footer/Footer';
 import ShopRoutes from './routes/ShopRoutes/ShopRoutes';
-import { CartProvider } from './pages/Shop/CardContext';
 import Bag from '../src/pages/ShoppingBag/Bag';
+import Appfree from './pages/Discount/Appfree/Appfree';
 
 
 export default function App() {
   return (
     < >
-      <CartProvider> 
-        <BrowserRouter>
           <Navbar />
 
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/shop/:id" element={<ShopRoutes />} />
             <Route path="/bag" element={<Bag />} />
+            <Route path="/app" element={<Appfree />} />
 
           </Routes>
 
           <Footer />
-        </BrowserRouter>
-       
-      </CartProvider>
-
-
-
     </>
   )
 }
