@@ -22,6 +22,7 @@ function cartReducer(state, action) {
         cartItems: state.cartItems.filter(item => item.id !== action.payload.id),
         count: Math.max(0, state.count - 1),
       };
+      
     default:
       return state;
   }
