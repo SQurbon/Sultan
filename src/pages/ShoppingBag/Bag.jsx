@@ -12,7 +12,6 @@ export default function Cart() {
        const total = cart.reduce((sum, product) => sum + product.price, 0);
 
 
-
     return (
         <section className='bag'>
             <div className="container">

@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import ShopRoutes from './routes/ShopRoutes/ShopRoutes';
 import Bag from './pages/ShoppingBag/Bag';
 import { CartProvider } from './pages/Shop/CardContext';
+import PaymentPage from './pages/payment/PaymentPage';
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/shop/:id" element={<ShopRoutes />} />
             <Route path="/bag" element={<Bag />} />
+            <Route path='/payment' element={<PaymentPage/>} />
           </Routes>
 
           <Footer />

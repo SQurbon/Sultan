@@ -1,0 +1,92 @@
+*:focus {
+    outline: none;
+}
+
+.card-body {
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    padding: 25px;
+
+}
+
+.card-check {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-number {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-number>p {
+    font-size: 14px;
+
+}
+
+.card-mmm>p {
+    font-size: 14px;
+}
+
+.cvv-card>p {
+    font-size: 14px;
+    
+}
+
+.inputt {
+
+    margin: 10px 0 10px 0;
+    width: 80%;
+    height: 45px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 2px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.inputtt {
+    background-color: blue;
+    margin: 10px 0 10px 0;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    height: 45px;
+    width: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+.card-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cvv {
+    background-color: blue;
+    margin: 10px 0 10px 0;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    height: 45px;
+    width: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px;
+}
+.cvv-card{
+    display: flex;
+    flex-direction: column;
+    
+}
