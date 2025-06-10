@@ -2,32 +2,24 @@ import { useLocation, useNavigate } from "react-router-dom";
 import './Shoptitle.css';
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
-// import { useCart } from "../../context/CartContext"; // <-- Qo‘shildi
 import Product from "../Main/PromotionProduct/Product";
 import { useCart } from "./CardContext";
-import { useState } from "react";
+import { Badge } from "react-bootstrap";
 
 export default function Shoptitle() {
-    const [count, setCount] = useState(0)
     const location = useLocation();
     const item = location.state;
   const navigate = useNavigate();
-    const { dispatch } = useCart(); // <-- Contextdan dispatch olamiz
+    const {count, dispatch } = useCart(); // <-- Contextdan dispatch olamiz
 
     if (!item) return <p>Mahsulot topilmadi</p>;
     console.log(item.price);
-    
-
-
-
-
 
     const handleAddToCart = () => {
-        setCount(count + 1)
         dispatch({ type: 'ADD_TO_CART', payload: item });
     };
+
     const handleRemoveToCart = () => {
-        setCount(count <= 0 ? 0 : count - 1)
         dispatch({ type: 'REMOVE_FROM_CART', payload: item });
     }
 
@@ -35,9 +27,6 @@ export default function Shoptitle() {
         navigate('/bag'); // <-- Qo‘shildi
     }
 
-
-
-    
     return (
         <>
             <section className="shoptitle">
@@ -57,9 +46,8 @@ export default function Shoptitle() {
                                 </div>
                                 <div className="caunt">
                                     <div className="minus" onClick={handleRemoveToCart}><FaMinus /></div>
-                                    <h3>{count}</h3>
                                     <div className="plus" onClick={handleAddToCart}><FaPlus /></div>
-                                    <button onClick={handlenavigate}>В корзину <MdOutlineShoppingCart /></button>
+                                    <button onClick={handlenavigate}>В корзину < MdOutlineShoppingCart  className="shop"/><Badge     variant="default |outline | secondary | destructive"><p>{count}</p></Badge></button>
                                 </div>
                             </div>
                         </div>

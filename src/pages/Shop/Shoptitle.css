@@ -53,6 +53,28 @@ section.shoptitle .total .caunt button {
     color: #FFFFFF;
     border: 0px;
     border-radius: 90px;
+    font-size: 18px;
+    position: relative;
+
+}
+
+section.shoptitle .total .caunt button .shop {
+    font-size: 25px;
+}
+
+.bg-primary {
+    z-index: 222;
+    background-color: #FECA6E !important;
+    position: absolute;
+    height: 30px;
+    top: -10px;
+    right: 0px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px black;
+}
+
+.bg-primary p {
+    font-size: 20px;
 }
 
 section.shoptitle .total .info {
@@ -139,29 +161,36 @@ section.shoptitle .total .info .first h5 {
         margin: auto;
         justify-content: center !important;
     }
-    section.shoptitle h2{
+
+    section.shoptitle h2 {
         font-size: 18px;
         padding-bottom: 10px;
     }
-    section.shoptitle .total .caunt{
+
+    section.shoptitle .total .caunt {
         width: unset;
     }
-    section.shoptitle .total .info{
+
+    section.shoptitle .total .info {
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2, auto);
         width: 100%;
         grid-gap: 10px;
     }
-    section.shoptitle .total .info .first h4{
+
+    section.shoptitle .total .info .first h4 {
         font-size: 15px;
     }
-    section.shoptitle .total .info .first h5{
+
+    section.shoptitle .total .info .first h5 {
         font-size: 15px;
     }
-    section .container .mainbox h2  {
+
+    section .container .mainbox h2 {
         text-align: center !important;
     }
-    section .container .mainbox .bottom button{
+
+    section .container .mainbox .bottom button {
         padding: 20px 30px;
         display: flex;
         margin: auto;
