@@ -245,6 +245,10 @@ nav {
     outline: none;
 }
 
+.bg-primary {
+    background-color: rgb(253 195 13 / 77%) !important;
+}
+
 
 @media (max-width: 1199px) {
     .highlight{

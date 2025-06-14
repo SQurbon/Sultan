@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -31,10 +31,6 @@ export default function Aksya() {
         <div
           slot="container-start"
           className="parallax-bg"
-          style={{
-            'background-image':
-              'url(https://swiperjs.com/demos/images/nature-1.jpg)',
-          }}
           data-swiper-parallax="-23%"
         ></div>
         <SwiperSlide>

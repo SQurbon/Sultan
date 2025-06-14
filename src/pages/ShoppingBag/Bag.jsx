@@ -1,14 +1,12 @@
-import React from 'react';
 import { useCart } from '../../pages/Shop/CardContext';
-// import { useCart } from '../context/CartContext';
 import { FaMinus } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
 import { FaTrashAlt } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FcMoneyTransfer } from "react-icons/fc";
 import './Bag.css'
-export default function Cart() {
-    const { cart, dispatch } = useCart();
+export default function Bag() {
+    const { cartItems, dispatch } = useCart();
 
 
     const total = cart.reduce((sum, product) => sum + product.price, 0);
