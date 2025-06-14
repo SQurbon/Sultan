@@ -1,6 +1,7 @@
 import React from 'react'
 import './Payment.css'
 import Card from './CreditCard'
+import Bag from '../ShoppingBag/Bag'
 
 function PaymentPage() {
   return (
@@ -118,18 +119,14 @@ function PaymentPage() {
         </div>
       </div> */}
 
-<div className="left">
-<h1>1</h1>
-</div>
-<div className="right">
-<div className="right-header">
-  <h1>
-    Karta ma`lumotlari
-  </h1>
-  
-</div>
-  <Card/>
-</div>
+      <div className="left">
+        <Bag />
+      </div>    
+      <div className="right">
+       
+        <Card />
+        <button>Потвердить</button>
+      </div>
 
     </div>
   )
