@@ -1,4 +1,3 @@
-
 export default function EnemyWord({ word, y }) {
   return (
     <div

@@ -44,6 +44,10 @@ section.catalog .container:nth-child(2) h3{
     section .container:nth-child(1){
         display: none;
     }
+    section.catalog .box h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
     
 }
 @media (max-width: 575px){
