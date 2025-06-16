@@ -23,13 +23,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/shop/:id" element={<ShopRoutes />} />
-            <Route path="/bag" element={<Bag />} />
-
-            <Route path='/payment' element={<PaymentPage/>} />
-
-            <Route path="/app" element={<Appfree />} />
-
-
+            <Route path="/bagg" element={<Bag />} />
+            <Route path='/bag' element={<PaymentPage/>} />
           </Routes>
 
           <Footer />
