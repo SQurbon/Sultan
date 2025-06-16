@@ -10,6 +10,7 @@ import { FaBars } from "react-icons/fa6";
 import './Navbar.css'
 import logo from '../../assets/images/3.1 Лого Султан RGB.svg'
 import user from '../../assets/images/Group 100.svg'
+
 // import { Badge } from "@/components/ui/badge"
 export default function Navbar() {
 
