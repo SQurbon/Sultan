@@ -80,6 +80,16 @@ footer button{
     padding: 15px 50px;
     height: 60px;
 }
+@media (max-width: 991px){
+footer .row{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 30px;
+}
+footer p.text {
+    text-align: left;
+}
+}
 @media (max-width: 575px){
     footer .container{
         width: 100% !important;

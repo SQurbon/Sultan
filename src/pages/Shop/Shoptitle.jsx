@@ -13,7 +13,6 @@ export default function Shoptitle() {
     const {count, dispatch } = useCart(); // <-- Contextdan dispatch olamiz
 
     if (!item) return <p>Mahsulot topilmadi</p>;
-    console.log(item.price);
 
     const handleAddToCart = () => {
         dispatch({ type: 'ADD_TO_CART', payload: item });
