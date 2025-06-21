@@ -13,7 +13,7 @@ function cartReducer(state, action) {
     case "ADD_TO_CART":
       return {
         ...state,
-        cartItems: [...state.cartItems, action.payload],
+        cartItems: [...state.cartItems, action.payload ,action.payload.id+1],
         count: state.count + 1,
       };
     case "REMOVE_FROM_CART":
