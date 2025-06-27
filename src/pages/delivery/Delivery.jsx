@@ -7,22 +7,16 @@ function Delivery() {
   const [intervalValue, setIntervalValue] = useState(0);
 
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIntervalValue((prev) => {
-        if (prev >= 30000) {
-          clearInterval(timer);
-          console.log(prev);
-          return prev;
-        }
-        return prev + 1000;
-      });
 
+  useEffect(()=>{
+    if(intervalValue<30001){
 
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
+      setInterval(()=>{
+        setIntervalValue((prev)=>prev+1000)
+      },1000)
+      return;
+    }
+  },[])
 
   return (
     <div className='delivery'>
