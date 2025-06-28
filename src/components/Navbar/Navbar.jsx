@@ -10,6 +10,7 @@ import { FaBars } from "react-icons/fa6";
 import './Navbar.css'
 import logo from '../../assets/images/3.1 Лого Султан RGB.svg'
 import user from '../../assets/images/Group 100.svg'
+import { PromotionProduct } from '../../contexts/Promotionproduct/Productcontext';
 
 // import { Badge } from "@/components/ui/badge"
 export default function Navbar() {
@@ -17,6 +18,7 @@ export default function Navbar() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
     const [isVisible, setIsVisible] = useState(!isMobile);
     const [catalog, setCatalog] = useState(false)
+    const [search, setSearch] = useState("");
 
 
 
@@ -51,6 +53,25 @@ export default function Navbar() {
     }, []);
 
 
+    // serach qismi
+
+    const handle = (e) => {
+        e.preventDefault()
+        setSearch(e.target.value)
+    }
+
+
+    useEffect(() => {
+        const searched = () => { 
+            
+        }
+        searched()
+        
+    }, [search])
+    
+
+
+
     return (
         <>
             <div className="topnone">
@@ -68,7 +89,7 @@ export default function Navbar() {
                 <button onClick={() => setCatalog(!catalog) && alert("salom")} >{catalog ? <RxCross1 /> : <RxDashboard />}  Каталог</button>
                 <div className="poisk">
                     <FaSearch />
-                    <input type="text" placeholder='Поиск' />
+                    <input type="text" placeholder='Поиск' onChange={(e) => handle(e)} />
                 </div>
             </div>
 
