@@ -76,3 +76,15 @@ section.bag .main button{
     color: white;
     border-radius: 10px;
 }
+section.bag .bagtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.bag .bagtop button {
+    background-color: #FFC85E;
+    padding: 15px 60px;
+    border: none;
+    color: white;
+    border-radius: 100px;
+}

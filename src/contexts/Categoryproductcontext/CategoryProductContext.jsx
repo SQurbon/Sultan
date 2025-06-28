@@ -8,19 +8,23 @@ import categoryfive from "../../assets/images/Group 205.png"
 export const CategoryProductContext = [
     {
         img: categoryone,
-        h3: "Бытовая химия"
+        h3: "Бытовая химия",
+        id:1
     },
     {
         img: categorythree,
-        h3: "Бытовая химия"
+        h3: "Бытовая химия",
+        id:2
     },
     {
         img: categoryfour,
-        h3: "Бытовая химия"
+        h3: "Бытовая химия",
+        id:4
     },
     {
         img: categoryfive,
-        h3: "Бытовая химия"
+        h3: "Бытовая химия",
+        id:5
     }
 
 ]

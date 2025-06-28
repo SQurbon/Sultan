@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import './Card.css'
 
 function Card() {
@@ -9,10 +9,12 @@ function Card() {
     const [isExpiryValid, setIsExpiryValid] = useState(null);
     const [cardType, setCardType] = useState('');
     const [checked, setChecked] = useState([])
+    console.log(checked);
+    
     //   const { setAlertsms, alertsms, setCodee, done, totalPrice } = useContext(StateContext)
     const [formatedNumbers, setFormattednumbers] = useState(null)
-  
-
+    console.log(formatedNumbers);
+    
 
     const cardLogo = [
         {
@@ -172,31 +174,30 @@ function Card() {
                             </div>
 
                             {/* ---------------------------karta-raqam true false------------------------------ */}
-                            
-                                {isValid === null ? (
-                                    <p> karta raqam kiriting</p>
-                                ) : isValid ? (
-                                    <p style={{ color: 'white' }}>Karta raqami to'g'ri</p>
-                                ) : (
-                                    <p style={{ color: 'red' }}>Karta raqami noto'g'ri</p>
-                                )}
-                            
+
+                            {isValid === null ? (
+                                <p> karta raqam kiriting</p>
+                            ) : isValid ? (
+                                <p style={{ color: 'white' }}>Karta raqami to'g'ri</p>
+                            ) : (
+                                <p style={{ color: 'red' }}>Karta raqami noto'g'ri</p>
+                            )}
+
 
                             {/* amal qilish muddati------------------------------------------------------- */}
                         </div>
                         <div className="card-data">
 
-                        <div className='card-mmm'>
-                            {/* <label  className='lebel-inp'>MM/YY</label> */}
-
-                            <input className='inputtt'
-                                type="text"
-                                value={expiryDate}
-                                onChange={handleExpiryDateChange}
-                                placeholder="MM/YY"
-                                maxLength={5}
-                            />
-                        
+                            <div className='card-mmm'>
+                                {/* <label  className='lebel-inp'>MM/YY</label> */}
+                                
+                                <input className='inputtt'
+                                    type="text"
+                                    value={expiryDate}
+                                    onChange={handleExpiryDateChange}
+                                    placeholder="MM/YY"
+                                    maxLength={5}
+                                />
                                 {isExpiryValid === null ? (
                                     <p>expire data kiriting</p>
                                 ) : isExpiryValid ? (
@@ -204,24 +205,17 @@ function Card() {
                                 ) : (
                                     <p style={{ color: 'red' }}>Amal qilish muddati noto'g'ri</p>
                                 )}
-                         
-                        </div>
-                        <div className="cvv-card">
-                            <input type="text" className="cvv" />
-<p>cvv</p>
-                        </div>
-                       
 
+                            </div>
+                            <div className="cvv-card">
+                                <input type="text" className="cvv" />
+                                <p>cvv</p>
+                            </div>
                         </div>
                         {/* --------------------------------------------------------------------------- */}
                     </div>
-
                 </form>
-
             </div>
-
-
-
         </div>
     )
 }
