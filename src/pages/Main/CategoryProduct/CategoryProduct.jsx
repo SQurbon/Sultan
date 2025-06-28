@@ -11,7 +11,7 @@ export default function CategoryProduct() {
                 <div className="container">
 
                     {CategoryProductContext.map(item => (
-                        <div className='box'>
+                        <div key={item.id} className='box'>
                             <div className="image">
                                 <img src={item.img} alt="" />
                             </div>

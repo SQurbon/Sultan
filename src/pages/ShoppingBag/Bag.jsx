@@ -13,6 +13,8 @@ export default function Bag() {
         (sum, item) => sum + item.price * (item.quantity || 1),
         0
     );
+    console.log(cartItems.id);
+    
 
     return (
         <section className='bag'>

@@ -125,7 +125,7 @@ function PaymentPage() {
       <div className="right">
        
         <Card />
-        <button>Потвердить</button>
+        <button>Потвердить✅</button>
       </div>
 
     </div>
