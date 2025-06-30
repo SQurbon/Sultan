@@ -15,7 +15,7 @@ function PaymentPage() {
        
         <Card />
         <button>
-          <a href="/delivery">
+          <a href="/selectdelivery">
 
           Потвердить
           </a>
