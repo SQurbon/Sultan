@@ -12,6 +12,8 @@ import PaymentPage from './pages/payment/PaymentPage';
 
 import Bag from '../src/pages/ShoppingBag/Bag';
 import Appfree from './pages/Discount/Appfree/Appfree';
+import Delivery from './pages/delivery/Delivery';
+import SelectDelivery from './pages/delivery/SelectDelivery';
 
 
 
@@ -25,6 +27,8 @@ export default function App() {
             <Route path="/shop/:id" element={<ShopRoutes />} />
             <Route path="/bagg" element={<Bag />} />
             <Route path='/bag' element={<PaymentPage/>} />
+            <Route path='/delivery' element={<Delivery/>} />
+            <Route path='/selectdelivery' element={<SelectDelivery/>} />
           </Routes>
 
           <Footer />

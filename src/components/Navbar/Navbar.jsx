@@ -116,7 +116,7 @@ export default function Navbar() {
                                             <a onMouseOver={moveHighlight} href="">О компании</a>
                                         </li>
                                         <li>
-                                            <a onMouseOver={moveHighlight} href="">Доставка и оплата</a>
+                                            <a onMouseOver={moveHighlight} href="/delivery">Доставка и оплата</a>
                                         </li>
                                         <li>
                                             <a onMouseOver={moveHighlight} href="">Возврат</a>

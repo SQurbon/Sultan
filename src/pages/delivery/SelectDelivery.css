@@ -1,0 +1,90 @@
+.SelectDelivery {
+    width: 100%;
+    
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.SelectDelivery-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    align-items: center;
+    padding: 60px 30px;
+
+}
+.SelectDelivery-card{
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.SelectDelivery-card>.input{
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    border: 1px solid grey;
+}
+.SelectDelivery-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+.SelectDelivery-card-text > h1{
+    font-size: 18px;
+}
+.SelectDelivery-card-text > h2{
+    font-size: 16px;
+}
+.true{
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    border: 1px solid grey;
+    background-color: chartreuse;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.false{
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    border: 1px solid grey;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chenge{
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+.allow{
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: chartreuse;
+    color: white; 
+}
+.SelectDelivery-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
