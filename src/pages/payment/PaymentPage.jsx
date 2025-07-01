@@ -14,13 +14,13 @@ function PaymentPage() {
       <div className="right">
        
         <Card />
-        <button>
           <a href="/selectdelivery">
+        <button className='payment-btn'>
 
           Потвердить
-          </a>
           
           </button>
+          </a>
       </div>
 
     </div>
