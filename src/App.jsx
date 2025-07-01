@@ -7,11 +7,8 @@ import Footer from './components/Footer/Footer';
 import ShopRoutes from './routes/ShopRoutes/ShopRoutes';
 
 
-import { CartProvider } from './pages/Shop/CardContext';
 import PaymentPage from './pages/payment/PaymentPage';
-
 import Bag from '../src/pages/ShoppingBag/Bag';
-import Appfree from './pages/Discount/Appfree/Appfree';
 
 
 
