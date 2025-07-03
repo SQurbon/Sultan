@@ -135,7 +135,7 @@ function SelectDelivery() {
             <div className='SelectDelivery-conteiner'>
                 {data&&data.map(item=>(
 
-                    <div className='SelectDelivery-card' key={item.id}>
+                    <div className='SelectDelivery-card' key={()=>setSelected(item.id)}>
                    { selected ===null ?
                    <input className='input' type="checkbox" name='inp' onClick={()=>clickHandler(item.id)} />
                 :

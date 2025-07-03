@@ -11,6 +11,7 @@ import PaymentPage from './pages/payment/PaymentPage';
 import Bag from '../src/pages/ShoppingBag/Bag';
 
 import Delivery from './pages/delivery/Delivery';
+import SelectDelivery from './pages/delivery/SelectDelivery';
 
 
 
