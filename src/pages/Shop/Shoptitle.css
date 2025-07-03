@@ -163,8 +163,9 @@ section.shoptitle .total .info .first h5 {
     }
 
     section.shoptitle h2 {
-        font-size: 18px;
+        font-size: 15px;
         padding-bottom: 10px;
+        letter-spacing: 0.5px;
     }
 
     section.shoptitle .total .caunt {
@@ -173,7 +174,7 @@ section.shoptitle .total .info .first h5 {
 
     section.shoptitle .total .info {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(1, auto);
         width: 100%;
         grid-gap: 10px;
     }
@@ -195,5 +196,17 @@ section.shoptitle .total .info .first h5 {
         display: flex;
         margin: auto;
     }
-
+    .bg-primary p{
+        font-size: 15px;
+    }
+    .bg-primary{
+        height: 23px;
+        border-radius: 15px;
+    }
+    section.shoptitle .total .caunt .minus svg, section.shoptitle .total .caunt .plus svg{
+        color: white;
+    }
+    section.shoptitle{
+        margin-top: 30px;
+    }
 }

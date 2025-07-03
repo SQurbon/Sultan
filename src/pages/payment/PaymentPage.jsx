@@ -7,20 +7,20 @@ function PaymentPage() {
   return (
     <div className='payment'>
 
- 
+
       <div className="left">
         <Bag />
-      </div>    
+      </div>
       <div className="right">
-       
-        <Card />
-          <a href="/selectdelivery">
-        <button className='payment-btn'>
 
-          Потвердить
-          
+        <Card />
+        <a href="/selectdelivery">
+          <button className='payment-btn'>
+
+            Потвердить
+
           </button>
-          </a>
+        </a>
       </div>
 
     </div>

@@ -9,7 +9,7 @@ import { Badge } from "react-bootstrap";
 export default function Shoptitle() {
     const location = useLocation();
     const item = location.state;
-  const navigate = useNavigate();
+    const navigate = useNavigate();
     const {count, dispatch } = useCart(); // <-- Contextdan dispatch olamiz
 
     if (!item) return <p>Mahsulot topilmadi</p>;
