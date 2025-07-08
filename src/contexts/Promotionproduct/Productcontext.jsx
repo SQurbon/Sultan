@@ -6,7 +6,7 @@ import fourth from '../../assets/images/fourth.png'
 export const PromotionProduct = [
     {
         id: 1,
-        img: first,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zwhySGCEBxRRFYIcQgvOLOpRGqrT3d7Qng&s",
         h1: "Sorti Ср-во для мытья посуды Апельсин+мята:",
         h2: "Штрихкод:",
         h3: "4604049097548",
@@ -14,7 +14,7 @@ export const PromotionProduct = [
         h5: "Нэфис",
         h44: "Бренд:",
         h55: "AOS",
-        price:  48.76,
+        price:  111,
         btn: "В КОРЗИНУ"
     },
     {
@@ -27,7 +27,7 @@ export const PromotionProduct = [
         h5: "Нэфис",
         h44: "Бренд:",
         h55: "AOS",
-        price:  48.76,
+        price:  111,
         btn: "В КОРЗИНУ"
     },
     {
@@ -40,7 +40,7 @@ export const PromotionProduct = [
         h5: "Нэфис",
         h44: "Бренд:",
         h55: "AOS",
-        price:  48.76,
+        price:  111,
         btn: "В КОРЗИНУ"
     },
     {

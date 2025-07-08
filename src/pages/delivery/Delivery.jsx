@@ -2,19 +2,51 @@ import React, { useEffect, useState } from 'react';
 import { BsBoxSeam } from "react-icons/bs";
 import { FaCheck } from "react-icons/fa";
 import { TbTruckDelivery } from "react-icons/tb";
+import { io } from 'socket.io-client';
 
 function Delivery() {
   const [intervalValue, setIntervalValue] = useState(0);
 
-  useEffect(() => {
-    if (intervalValue < 30000) {
-      setTimeout(() => {
-        setIntervalValue(intervalValue + 1000);
-      }, 1000);
-    }
-  }, [intervalValue]);
+const socket = io("http://localhost:5000");
+  
+  // useEffect(() => {
+  //   if (intervalValue < 30000) {
+  //     setTimeout(() => {
+  //       setIntervalValue(intervalValue + 1000);
+  //     }, 1000);
+  //   }
+  // }, [intervalValue]);
 
-  console.log(intervalValue / 1000);
+
+
+    useEffect(() => {
+    socket.on("orderStatus", (data) => {
+      if (data.success) {
+        console.log("✅ Holat:", data.status);
+        // Har bir tugma uchun alohida signal
+        if (data.status === "Собирается") {
+
+          setIntervalValue(intervalValue + 10000);
+
+        } else if (data.status === "На доставке") {
+
+          setIntervalValue(intervalValue + 20000);
+
+        } else if (data.status === "Доставлено") {
+
+          setIntervalValue(intervalValue + 30000);
+        }
+      }
+    });
+
+    return () => socket.disconnect();
+  }, []);
+
+
+console.log(intervalValue);
+
+
+
 
   return (
     <div className='delivery'>
@@ -35,9 +67,9 @@ function Delivery() {
       </div>
 
       <div className='ssdd'>
-        <div className={intervalValue >= 1000 ? "yellow" : 'ss1'}></div>
         <div className={intervalValue >= 10000 ? "yellow" : 'ss1'}></div>
         <div className={intervalValue >= 20000 ? "yellow" : 'ss1'}></div>
+        <div className={intervalValue >= 30000 ? "yellow" : 'ss1'}></div>
       </div>
 
       <div className="delivery-footer">
