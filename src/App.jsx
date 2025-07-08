@@ -12,6 +12,7 @@ import Bag from '../src/pages/ShoppingBag/Bag';
 
 import Delivery from './pages/delivery/Delivery';
 import SelectDelivery from './pages/delivery/SelectDelivery';
+import Contact from './pages/contact/Contact';
 
 
 
@@ -28,6 +29,8 @@ export default function App() {
             <Route path='/bag' element={<PaymentPage/>} />
             <Route path='/delivery' element={<Delivery/>} />
             <Route path='/selectdelivery' element={<SelectDelivery/>} />
+            <Route path='/contact' element={<Contact/>} />
+
           </Routes>
 
           <Footer />
