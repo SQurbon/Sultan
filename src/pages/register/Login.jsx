@@ -30,6 +30,7 @@ function Login() {
 <button className='login-card-button'>
     потвердит
 </button>
+<a href="/register"> У вас нет учетной записи?</a>
             </div>
 
         </div>

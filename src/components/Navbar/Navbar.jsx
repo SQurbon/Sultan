@@ -11,6 +11,7 @@ import './Navbar.css'
 import logo from '../../assets/images/3.1 Лого Султан RGB.svg'
 import user from '../../assets/images/Group 100.svg'
 import { PromotionProduct } from '../../contexts/Promotionproduct/Productcontext';
+import { Link } from 'react-router-dom';
 
 // import { Badge } from "@/components/ui/badge"
 export default function Navbar() {
@@ -122,7 +123,7 @@ export default function Navbar() {
                                             <a onMouseOver={moveHighlight} href="">Возврат</a>
                                         </li>
                                         <li>
-                                            <a onMouseOver={moveHighlight} href="">Контакты</a>
+                                            <Link onMouseOver={moveHighlight} to={'/contact'}>Контакты</Link>
                                         </li>
                                     </ul>
                                 </Col>

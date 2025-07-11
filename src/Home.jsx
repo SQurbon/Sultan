@@ -8,6 +8,7 @@ import Delivery from './pages/delivery/Delivery'
 import SelectDelivery from './pages/delivery/SelectDelivery'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import Contact from './pages/contact/Contact'
 
 function Home() {
   return (
@@ -15,14 +16,17 @@ function Home() {
       
       <Navbar />
 
+
 <Routes>
-  <Route path="/" element={<HomePage />} />
-  <Route path="/shop/:id" element={<ShopRoutes />} />
-  <Route path="/bagg" element={<Bag />} />
-  <Route path='/bag' element={<PaymentPage />} />
-  <Route path='/delivery' element={<Delivery />} />
-  <Route path='/selectdelivery' element={<SelectDelivery />} />
-</Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/shop/:id" element={<ShopRoutes />} />
+            <Route path="/bagg" element={<Bag />} />
+            <Route path='/bag' element={<PaymentPage/>} />
+            <Route path='/delivery' element={<Delivery/>} />
+            <Route path='/selectdelivery' element={<SelectDelivery/>} />
+            <Route path='/contact' element={<Contact/>} />
+
+          </Routes>
 
 <Footer />
     </>

@@ -11,6 +11,9 @@ import ShopRoutes from './routes/ShopRoutes/ShopRoutes';
 import Login from './pages/register/Login';
 import Register from './pages/register/Register';
 import Home from './Home';
+import Delivery from './pages/delivery/Delivery';
+import SelectDelivery from './pages/delivery/SelectDelivery';
+import Contact from './pages/contact/Contact';
 
 
 
@@ -20,11 +23,12 @@ export default function App() {
     < >
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
 
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register/>} />
       </Routes>
+   
 
     </>
   )

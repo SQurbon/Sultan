@@ -5,16 +5,20 @@ import { FaTrashAlt } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FcMoneyTransfer } from "react-icons/fc";
 import './Bag.css'
+import { CardTitle } from 'react-bootstrap';
 
 export default function Bag() {
     const { cartItems, dispatch } = useCart();
+
+
 
     const total = cartItems.reduce(
         (sum, item) => sum + item.price * (item.quantity || 1),
         0
     );
-    console.log(cartItems.id);
-    
+
+
+
 
     return (
         <section className='bag'>

@@ -84,3 +84,72 @@ Mahsulotlar ro‘yxati, har birini tahrirlash, o‘chirish (localStorage).
 
 Bu orqali React bilan CRUD prinsiplarini mashq qilasiz.
 
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🔐 1. Foydalanuvchi autentifikatsiyasi (login/ro‘yxatdan o‘tish)
+Google yoki telefon raqam bilan kirish
+
+Foydalanuvchi o‘z buyurtmalarini ko‘rishi uchun
+
+📦 2. Buyurtmalar tarixi (My Orders)
+Foydalanuvchi o‘zining oldingi buyurtmalarini ko‘ra oladi
+
+Har bir buyurtmada: status (qabul qilindi, tayyorlanmoqda, yetkazildi)
+
+📊 3. Admin Panel
+Mahsulot qo‘shish/o‘chirish/tahrirlash
+
+Buyurtmalarni ko‘rish va statusini o‘zgartirish
+
+Statistikalar: eng ko‘p sotilgan mahsulotlar, umumiy savdo hajmi
+
+⭐ 4. Fikr va baholash tizimi
+Foydalanuvchilar mahsulotlarga ⭐ berishlari va izoh qoldirishlari mumkin
+
+🔍 5. Mahsulotlar uchun qidiruv va filtrlash
+Narx bo‘yicha filtrlash
+
+Kategoriya/brand bo‘yicha saralash
+
+Qidiruv input orqali mahsulot topish
+
+❤️ 6. "Sevimlilar" ro‘yxati (Wishlist)
+Foydalanuvchi yoqtirgan mahsulotlarini saqlab qo‘yadi
+
+🧾 7. PDF hisob-faktura (invoice)
+Har bir buyurtmadan so‘ng avtomatik ravishda PDF invoice yuklab olish
+
+🌐 8. Ko‘p tillilik (O‘zbekcha / Ruscha / Inglizcha)
+Sayt interfeysini foydalanuvchi tiliga mos ravishda o‘zgartirish
+
+📍 9. Xaritada yetkazib berish manzilini tanlash (Google Maps API bilan)
+Foydalanuvchi manzilini xaritada belgilanadi
+
+Admin panelda xaritada buyurtma joyi ko‘rinadi
+
+🧠 10. AI tavsiyalar (shunga o‘xshash mahsulotlar)
+Savatchaga qo‘shilgan mahsulot asosida boshqa mahsulotlarni tavsiya qilish
+
+💬 11. Live chat (real-time qo‘llab-quvvatlash)
+Admin va mijoz o‘rtasida chat (Firebase bilan yoki WebSocket bilan)
+
+🧑‍🤝‍🧑 12. Referal tizimi
+Do‘stini taklif qilgan foydalanuvchi chegirma yoki bonus oladi
+
