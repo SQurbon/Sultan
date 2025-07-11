@@ -1,0 +1,87 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+}
+.Register{
+
+}
+
+.login-card {
+    width: 360px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.register-card{
+    width: 390px;
+    height: 490px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-card-input>label>input {
+    width: 260px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.login-card-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-card-input>label {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card-button {
+    width: 260px;
+    height: 60px;
+    padding: 10px;
+    background-color: #FFC85E;
+    color: white;
+    border-radius: 12px;
+    border: none;
+
+}
+.show-inp{
+    position: relative;
+}
+.show-icon{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 51px;
+    right: 14px;
+    color: gray;
+}
