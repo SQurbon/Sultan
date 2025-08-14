@@ -94,3 +94,8 @@ input::placeholder {
     flex-direction: column;
     
 }
+@media (max-width:767px) {
+    .card-body{
+        width: 100% !important;
+    }
+}

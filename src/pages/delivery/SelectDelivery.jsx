@@ -130,18 +130,11 @@ function SelectDelivery() {
     ]
     const [selected, setSelected] = useState(null)
    
-
-
     console.log(CardTitle);
-    
 
     const clickHandler = (id) => {
         setSelected(id)
-
-         
     }
-
-
 
     const socket = io("http://localhost:5000")
     const [messages, setMessages] = useState([]);
@@ -188,12 +181,7 @@ function SelectDelivery() {
 
                     <button className='allow'>потвердить</button>
 
-                    <h2>Botdan kelgan xabar:</h2>
-                    <ul>
-                        {messages.map((msg, idx) => (
-                            <h1 key={idx}>{msg}</h1>
-                        ))}
-                    </ul>
+                    
                 </a>
             </div>
 
