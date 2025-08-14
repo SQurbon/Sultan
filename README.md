@@ -152,4 +152,3 @@ Admin va mijoz o‘rtasida chat (Firebase bilan yoki WebSocket bilan)
 
 🧑‍🤝‍🧑 12. Referal tizimi
 Do‘stini taklif qilgan foydalanuvchi chegirma yoki bonus oladi
-

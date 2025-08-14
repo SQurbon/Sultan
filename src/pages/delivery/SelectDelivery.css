@@ -88,3 +88,12 @@
     width: 100%;
     margin-top: 20px;
 }
+@media (max-width:767px) {
+    .SelectDelivery-card>.input{
+        width: 20px;
+        height: 20px;
+    }
+    .SelectDelivery-card-text > h2{
+        font-size: 12px;
+    }
+}

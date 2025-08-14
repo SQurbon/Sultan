@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import EnemyWord from '../../Discount/EnemyWord/EnemyWord';
 import wordList from '../../Discount/Words/Words';
 
-function App() {
+function Appfree() {
   const [enemies, setEnemies] = useState([]);
   const [input, setInput] = useState('');
   const [isGameOver, setIsGameOver] = useState(false);
@@ -171,4 +171,4 @@ function App() {
   );
 }
 
-export default App;
+export default Appfree;

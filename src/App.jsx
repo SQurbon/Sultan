@@ -13,6 +13,8 @@ import Bag from '../src/pages/ShoppingBag/Bag';
 import Delivery from './pages/delivery/Delivery';
 import SelectDelivery from './pages/delivery/SelectDelivery';
 import Contact from './pages/contact/Contact';
+import Appfree from './pages/Discount/Appfree/Appfree';
+import { CartIconProvider } from './components/Navbar/CartIconProvider';
 
 
 
@@ -20,20 +22,22 @@ import Contact from './pages/contact/Contact';
 export default function App() {
   return (
     < >
-          <Navbar />
+      <CartIconProvider>
 
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/shop/:id" element={<ShopRoutes />} />
-            <Route path="/bagg" element={<Bag />} />
-            <Route path='/bag' element={<PaymentPage/>} />
-            <Route path='/delivery' element={<Delivery/>} />
-            <Route path='/selectdelivery' element={<SelectDelivery/>} />
-            <Route path='/contact' element={<Contact/>} />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/shop/:id" element={<ShopRoutes />} />
+          <Route path="/bagg" element={<Bag />} />
+          <Route path='/bag' element={<PaymentPage />} />
+          <Route path='/delivery' element={<Delivery />} />
+          <Route path='/selectdelivery' element={<SelectDelivery />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/apfree' element={<Appfree />} />
+        </Routes>
+        <Footer />
+      </CartIconProvider>
 
-          </Routes>
-
-          <Footer />
     </>
   )
 }
