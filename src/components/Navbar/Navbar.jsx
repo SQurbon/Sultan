@@ -12,6 +12,7 @@ import logo from '../../assets/images/3.1 Лого Султан RGB.svg'
 import user from '../../assets/images/Group 100.svg'
 import { PromotionProduct } from '../../contexts/Promotionproduct/Productcontext';
 import { Link } from 'react-router-dom';
+import { useCartIcon } from './CartIconProvider';
 
 // import { Badge } from "@/components/ui/badge"
 export default function Navbar() {
@@ -21,6 +22,7 @@ export default function Navbar() {
     const [catalog, setCatalog] = useState(false)
     const [search, setSearch] = useState("");
 
+    const cartRef = useCartIcon();
 
 
     const highlightRef = useRef(null);
@@ -63,13 +65,13 @@ export default function Navbar() {
 
 
     useEffect(() => {
-        const searched = () => { 
-            
+        const searched = () => {
+
         }
         searched()
-        
+
     }, [search])
-    
+
 
 
 
@@ -155,7 +157,9 @@ export default function Navbar() {
                                     </div>
                                     <button>Прайс-лист <IoMdDownload /></button>
                                     <div className="shop">
-                                        <LiaShoppingCartSolid />
+                                        <div ref={cartRef}>
+                                            <LiaShoppingCartSolid />
+                                        </div>
                                         <h4><span>Корзина</span> <br /> ₸</h4>
                                     </div>
                                 </Col>

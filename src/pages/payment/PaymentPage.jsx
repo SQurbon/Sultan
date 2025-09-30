@@ -3,12 +3,14 @@ import './Payment.css'
 import Card from './CreditCard'
 import Bag from '../ShoppingBag/Bag'
 import { useCart } from '../Shop/CardContext';
+import { Button } from 'react-bootstrap';
+import { useToggle } from '../ShoppingBag/ToggleContext';
+import { TbXboxX } from "react-icons/tb";
 
 function PaymentPage() {
+  const { isBoxVisible } = useToggle();
   const { cartItems } = useCart();
-
-  console.log(cartItems);
-
+  const { toggleBox } = useToggle();
 
   const sendToBot = () => {
     cartItems.forEach((item) => {
@@ -30,21 +32,23 @@ function PaymentPage() {
 
   return (
     <div className='payment'>
-
       <div className="left">
         <Bag />
       </div>
-      <div className="right">
+      <div style={{ display: isBoxVisible ? "block" : "none" }} className="payment-container ">
+        <div className="right">
 
-        <Card />
-        <a href="/selectdelivery">
-          <button className='payment-btn' onClick={sendToBot}>
+          <Card />
+          <a href="/selectdelivery">
+            <button className='payment-btn' onClick={sendToBot}>
+              Потвердить
+            </button>
+          </a>
+          <TbXboxX onClick={toggleBox} className='x' />
+        </div>
 
-            Потвердить
-
-          </button>
-        </a>
       </div>
+
 
     </div>
   )

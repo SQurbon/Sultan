@@ -2,23 +2,18 @@ import { useCart } from '../../pages/Shop/CardContext';
 import { FaMinus } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
 import { FaTrashAlt } from "react-icons/fa";
-import { FiShoppingCart } from "react-icons/fi";
-import { FcMoneyTransfer } from "react-icons/fc";
 import './Bag.css'
-import { CardTitle } from 'react-bootstrap';
+
+import { useToggle } from './ToggleContext';
 
 export default function Bag() {
     const { cartItems, dispatch } = useCart();
-
-
+    const { toggleBox } = useToggle();
 
     const total = cartItems.reduce(
         (sum, item) => sum + item.price * (item.quantity || 1),
         0
     );
-
-
-
 
     return (
         <section className='bag'>
@@ -29,6 +24,7 @@ export default function Bag() {
                             <h1>Корзина</h1>
                             <h3>{total.toFixed(2)} ₽</h3>
                             <button>Получить скидку</button>
+                            <button onClick={toggleBox}>To'lo'v</button>
                         </div>
 
                         {cartItems.length === 0 ? (

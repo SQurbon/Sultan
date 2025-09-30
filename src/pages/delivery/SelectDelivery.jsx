@@ -154,6 +154,7 @@ function SelectDelivery() {
         },
     ]
     const [selected, setSelected] = useState(null)
+<<<<<<< HEAD
 
 
 
@@ -181,6 +182,17 @@ function SelectDelivery() {
                 socket.off("botMessage");
             };
         }, []);
+=======
+   
+    console.log(CardTitle);
+
+    const clickHandler = (id) => {
+        setSelected(id)
+    }
+
+    const socket = io("http://localhost:5000")
+    const [messages, setMessages] = useState([]);
+>>>>>>> 07bb80113143973aeb13561dc1b8ffeb8a24cb44
 
         return (
             <div className='SelectDelivery'>
@@ -235,4 +247,18 @@ function SelectDelivery() {
         )
     }
 
+<<<<<<< HEAD
     export default SelectDelivery
+=======
+                    <button className='allow'>потвердить</button>
+
+                    
+                </a>
+            </div>
+
+        </div>
+    )
+}
+
+export default SelectDelivery
+>>>>>>> 07bb80113143973aeb13561dc1b8ffeb8a24cb44
